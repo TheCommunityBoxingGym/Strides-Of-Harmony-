@@ -523,7 +523,7 @@ export default function Home() {
                 Our Nordic Walking sessions are just one <strong>part of a bigger support network.</strong> Like all Turning Point services, we encourage you to move forward at your own pace, whether that is on our group walks or through additional support.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                You can also access help <strong>online, over the phone, or one-to-one</strong>—whatever suits you best.
+                You can also access help <strong>online, over the phone, or one to one</strong>—whatever suits you best.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 We also recognise that mental health and substance use are deeply connected. That is why our approach is holistic, <strong>supporting your overall wellbeing and resilience every step of the way.</strong>
