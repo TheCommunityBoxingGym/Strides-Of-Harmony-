@@ -134,7 +134,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white animate-gold-sparkle">
             Step Into New Possibilities
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white animate-typewriter">
+          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white">
             Join our free Nordic Walking sessions in partnership with Turning Point. A new way to move forward, at your own pace, in the fresh air.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
