@@ -16,6 +16,7 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -612,7 +613,18 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 text-gray-400">
                   <Phone className="w-5 h-5" />
-                  <span>Contact us for details</span>
+                  {showPhone ? (
+                    <a href="tel:07505520833" className="hover:text-green-500 transition-colors">
+                      07505520833
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => setShowPhone(true)}
+                      className="text-green-500 hover:text-green-400 transition-colors font-semibold underline"
+                    >
+                      Press for Phone
+                    </button>
+                  )}
                 </div>
                 <div className="flex items-center gap-2 text-gray-400">
                   <Mail className="w-5 h-5" />
