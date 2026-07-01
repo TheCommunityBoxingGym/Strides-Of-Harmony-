@@ -648,7 +648,7 @@ export default function Home() {
           {/* Partner Logos */}
           <div className="border-t border-gray-800 pt-12 mb-8">
             <p className="text-gray-400 text-center mb-6">Proud partners and supporters</p>
-            <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-center items-center gap-8 w-full">
               <img
                 src="/manus-storage/turning-point-logo_ca60529d.png"
                 alt="Turning Point"
