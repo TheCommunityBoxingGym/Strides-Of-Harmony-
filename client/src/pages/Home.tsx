@@ -650,11 +650,6 @@ export default function Home() {
             <p className="text-gray-400 text-center mb-6">Proud partners and supporters</p>
             <div className="flex flex-wrap justify-center items-center gap-8">
               <img
-                src="/manus-storage/PNGTransparent_5161528b.webp"
-                alt="Community Boxing Gym"
-                className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
-              />
-              <img
                 src="/manus-storage/turning-point-logo_ca60529d.png"
                 alt="Turning Point"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
