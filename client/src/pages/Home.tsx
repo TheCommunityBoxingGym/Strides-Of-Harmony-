@@ -46,30 +46,30 @@ export default function Home() {
     <div className="min-h-screen bg-white overflow-hidden">
       {/* Navigation */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 bg-transparent"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/manus-storage/community-boxing-gym-logo_adec7135.webp"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/gYriuhwEEpdduRls.webp"
               alt="The Community Boxing Gym"
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-gray-700 hover:text-blue-700 transition-colors">
-              About
-            </a>
-            <a href="#benefits" className="text-gray-700 hover:text-blue-700 transition-colors">
-              Benefits
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-700 transition-colors">
-              Contact
-            </a>
+          <div className="flex items-center gap-12 ml-auto">
+            <Button className="bg-green-500 hover:bg-green-600 text-white">Sign Up</Button>
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#about" className="text-white hover:text-green-300 transition-colors">
+                About
+              </a>
+              <a href="#benefits" className="text-white hover:text-green-300 transition-colors">
+                Benefits
+              </a>
+              <a href="#contact" className="text-white hover:text-green-300 transition-colors">
+                Contact
+              </a>
+            </div>
           </div>
-          <Button className="bg-green-500 hover:bg-green-600 text-white">Sign Up</Button>
         </div>
       </nav>
 
@@ -94,7 +94,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white max-w-3xl mx-auto px-4 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white animate-gold-sparkle">
             Step Into New Possibilities
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white">
@@ -137,25 +137,58 @@ export default function Home() {
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 They understand that every person is equally important, and we bring that same compassionate, non-judgemental approach to every walk. With <strong>96% of their regulated services rated Good or Outstanding</strong>, you know you are in safe hands.
               </p>
-              <div className="flex gap-4 pt-4">
+              <div className="flex gap-6 pt-8 justify-center md:justify-start items-center">
               <img
                 src="/manus-storage/turning-point-logo_ca60529d.png"
                 alt="Turning Point"
-                className="h-16 w-auto"
+                className="h-28 w-auto"
               />
                 <img
                   src="/manus-storage/community-boxing-gym-logo-alt_0553e64d.webp"
                   alt="Community Boxing Gym"
-                  className="h-16 w-auto"
+                  className="h-28 w-auto"
                 />
               </div>
             </div>
             <div className="animate-fade-in-right">
-              <img
-                src="/manus-storage/leroy_skalstad-people-850097_1920_8e5fccda.jpg"
-                alt="Community support"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+              {/* Multi-size Photo Grid Layout */}
+              <div className="grid grid-cols-2 gap-4 h-full">
+                {/* Large image - top left, spans 2 rows */}
+                <div className="row-span-2">
+                  <img
+                    src="/manus-storage/turning-point-team-discussion_f2eb9edb.png"
+                    alt="Team discussion and collaboration"
+                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Top right - small image */}
+                <div>
+                  <img
+                    src="/manus-storage/turning-point-man-smiling_b7983dbd.png"
+                    alt="Community member smiling"
+                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Bottom right - medium image */}
+                <div>
+                  <img
+                    src="/manus-storage/turning-point-no-one-recovers-alone_3ee16477.png"
+                    alt="No one recovers alone - community support message"
+                    className="rounded-lg shadow-lg w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Secondary smaller image below */}
+              <div className="mt-4">
+                <img
+                  src="/manus-storage/turning-point-contemplation_b660781d.jpg"
+                  alt="Moment of reflection and hope"
+                  className="rounded-lg shadow-lg w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -177,13 +210,13 @@ export default function Home() {
                 If You are Looking to Make a Change...
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                We know that overcoming addiction or substance abuse can feel like an uphill battle. There are moments when life feels out of control, or you might not know where else to turn.
+                We know that <strong>overcoming addiction or substance abuse can feel like an uphill battle.</strong> There are moments when life feels out of control, or you might not know where else to turn.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Whether you are feeling a reliance on alcohol, navigating mental health challenges, or simply needing to develop new personal resources, we are here to help you find a different path forward.
+                Whether you are feeling a reliance on alcohol, navigating mental health challenges, or <strong>simply needing to develop new personal resources, </strong>we are here to help you find a different path forward.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We understand that substance use and mental health are often deeply connected. Our sessions are designed to support your overall wellbeing, addressing both the physical and emotional sides of your journey.
+                We understand that substance use and mental health are often deeply connected. <strong>Our sessions are designed to support your overall wellbeing, addressing both the physical and emotional </strong>sides of your journey.
               </p>
             </div>
           </div>
@@ -198,7 +231,7 @@ export default function Home() {
               Discover the Power of Nordic Walking
             </h2>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Our new outdoor session is not just exercise—it is a fresh start.
+              Our new outdoor "Strides Of Harmony" session is not just exercise. It's a fresh start.
             </p>
           </div>
 
@@ -220,7 +253,7 @@ export default function Home() {
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">At Your Own Pace</h3>
                   <p className="text-gray-700">
-                    Just like your recovery, our walks are taken entirely at your own pace. There is no competition, no pressure—just forward movement, step by step.
+                    Just like your recovery, our walks are taken entirely at your own pace. There is no competition, no pressure just forward movement, step by step.
                   </p>
                 </div>
               </div>
@@ -233,7 +266,7 @@ export default function Home() {
                 playsInline
                 className="rounded-lg shadow-lg w-full h-auto"
               >
-                <source src="/manus-storage/path-fountain_298da278.mp4" type="video/mp4" />
+                <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/JXmiUcgLpmoIVyqv.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
