@@ -597,9 +597,9 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-bold mb-4">Our Partners</h3>
               <div className="space-y-3">
-                <p className="text-gray-400">The Community Boxing Gym Leicester</p>
                 <p className="text-gray-400">Turning Point</p>
-                <p className="text-gray-400">British Nordic Walking</p>
+                <p className="text-gray-400">I.N.W.A Nordic Walking</p>
+                <p className="text-gray-400">NHS - Fit For The Future</p>
               </div>
             </div>
 
