@@ -660,8 +660,8 @@ export default function Home() {
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
-                src="/manus-storage/british-nordic-walking-logo_51419730.png"
-                alt="British Nordic Walking"
+                src="/manus-storage/pasted_file_5NowFq_image_93fd3bec.png"
+                alt="International Nordic Walking Association"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
