@@ -646,23 +646,23 @@ export default function Home() {
           </div>
 
           {/* Partner Logos */}
-          <div className="border-t border-gray-800 pt-16 mb-12">
-            <p className="text-gray-400 text-center mb-12 text-lg">Proud partners and supporters</p>
-            <div className="flex flex-wrap justify-center items-center gap-12">
+          <div className="border-t border-gray-800 pt-12 mb-8">
+            <p className="text-gray-400 text-center mb-6">Proud partners and supporters</p>
+            <div className="flex flex-wrap justify-center items-center gap-8">
               <img
                 src="/manus-storage/PNGTransparent_5161528b.webp"
                 alt="Community Boxing Gym"
-                className="h-24 w-auto opacity-75 hover:opacity-100 transition-opacity"
+                className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
                 src="/manus-storage/turning-point-logo_ca60529d.png"
                 alt="Turning Point"
-                className="h-24 w-auto opacity-75 hover:opacity-100 transition-opacity"
+                className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
                 src="/manus-storage/british-nordic-walking-logo_51419730.png"
                 alt="British Nordic Walking"
-                className="h-24 w-auto opacity-75 hover:opacity-100 transition-opacity"
+                className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
