@@ -321,7 +321,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0s' }}>
-              <img src="/manus-storage/no-fitness-requirements_cdc41659.png" alt="No Fitness Requirements" className="w-full h-48 object-cover" />
+              <img src="/manus-storage/pasted_file_zNR3RJ_image_6cb40168.png" alt="No Fitness Requirements" className="w-full h-48 object-cover" />
               <div className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">No Fitness Requirements</h3>
                 <p className="text-gray-700">Start exactly where you are. No experience necessary.</p>
