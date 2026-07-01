@@ -340,7 +340,7 @@ export default function Home() {
 
           <div className="bg-green-50 border-2 border-green-200 rounded-lg p-8 animate-fade-in-up">
             <p className="text-lg text-gray-800 leading-relaxed text-center">
-              <strong>This session is specifically aimed at people who are actively trying to overcome addictions and substance abuse.</strong> There are no fitness requirements, and you do not need any experience. You are welcome just as you are. Our goal is to provide a supportive environment where you can focus on your wellbeing, connect with others who understand your journey, and take positive steps forward in a safe, judgement-free space.
+              <strong>This session is specifically aimed at people who are actively trying to overcome addictions and substance abuse.</strong> There are no fitness requirements, and you do not need any experience. You are welcome just as you are. Our goal is to provide a supportive environment where you can focus on your wellbeing, connect with others who understand your journey, and take positive steps forward in a safe, judgement free space.
             </p>
           </div>
         </div>
