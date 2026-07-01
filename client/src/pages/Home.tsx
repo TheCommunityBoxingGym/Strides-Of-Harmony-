@@ -53,7 +53,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="/manus-storage/community-boxing-gym-logo_9f8e7d6c.webp"
+              src="/manus-storage/community-boxing-gym-logo_adec7135.webp"
               alt="The Community Boxing Gym"
               className="h-10 w-auto"
             />
@@ -86,7 +86,7 @@ export default function Home() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/manus-storage/hero-nordic-walk_8f0e7e8a.mp4" type="video/mp4" />
+          <source src="/manus-storage/212393_medium_af82b203.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}
@@ -94,10 +94,10 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white max-w-3xl mx-auto px-4 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
             Step Into New Possibilities
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white">
             Join our free Nordic Walking sessions in partnership with Turning Point. A new way to move forward, at your own pace, in the fresh air.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -138,13 +138,13 @@ export default function Home() {
                 They understand that every person is equally important, and we bring that same compassionate, non-judgemental approach to every walk. With <strong>96% of their regulated services rated Good or Outstanding</strong>, you know you are in safe hands.
               </p>
               <div className="flex gap-4 pt-4">
+              <img
+                src="/manus-storage/turning-point-logo_ca60529d.png"
+                alt="Turning Point"
+                className="h-16 w-auto"
+              />
                 <img
-                  src="/manus-storage/turning-point-logo_c9584ebb.png"
-                  alt="Turning Point"
-                  className="h-16 w-auto"
-                />
-                <img
-                  src="/manus-storage/community-boxing-gym-logo-alt_5b4c3d2e.webp"
+                  src="/manus-storage/community-boxing-gym-logo-alt_0553e64d.webp"
                   alt="Community Boxing Gym"
                   className="h-16 w-auto"
                 />
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
             <div className="animate-fade-in-right">
               <img
-                src="/manus-storage/leroy_skalstad-people-850097_1920_52a113a9.jpg"
+                src="/manus-storage/leroy_skalstad-people-850097_1920_8e5fccda.jpg"
                 alt="Community support"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left order-2 md:order-1">
               <img
-                src="/manus-storage/lechenie-narkomanii-freedom-1886402_1920_d47798f8.jpg"
+                src="/manus-storage/lechenie-narkomanii-freedom-1886402_1920_c55ce1fe.jpg"
                 alt="Freedom and hope"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -233,7 +233,7 @@ export default function Home() {
                 playsInline
                 className="rounded-lg shadow-lg w-full h-auto"
               >
-                <source src="/manus-storage/path-fountain_c3d2e1f5.mp4" type="video/mp4" />
+                <source src="/manus-storage/path-fountain_298da278.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -283,7 +283,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
               <img
-                src="/manus-storage/manfredrichter-hike-4919705_1920_f9f12e72.jpg"
+                src="/manus-storage/manfredrichter-hike-4919705_1920_d386d3c6.jpg"
                 alt="Nordic walking outdoors"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
@@ -437,7 +437,7 @@ export default function Home() {
                 playsInline
                 className="rounded-lg shadow-lg w-full h-auto"
               >
-                <source src="/manus-storage/park-path_4a5b6c7d.mp4" type="video/mp4" />
+                <source src="/manus-storage/park-path_c00191a4.mp4" type="video/mp4" />
               </video>
             </div>
             <div className="animate-fade-in-right">
@@ -546,17 +546,17 @@ export default function Home() {
             <p className="text-gray-400 text-center mb-6">Proud partners and supporters</p>
             <div className="flex flex-wrap justify-center items-center gap-8">
               <img
-                src="/manus-storage/community-boxing-gym-logo_9f8e7d6c.webp"
+                src="/manus-storage/community-boxing-gym-logo_adec7135.webp"
                 alt="Community Boxing Gym"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
-                src="/manus-storage/turning-point-logo_c9584ebb.png"
+                src="/manus-storage/turning-point-logo_ca60529d.png"
                 alt="Turning Point"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
               <img
-                src="/manus-storage/british-nordic-walking-logo_4e5f6g7h.png"
+                src="/manus-storage/british-nordic-walking-logo_51419730.png"
                 alt="British Nordic Walking"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
