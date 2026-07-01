@@ -664,6 +664,11 @@ export default function Home() {
                 alt="British Nordic Walking"
                 className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
               />
+              <img
+                src="/manus-storage/ChatGPTImageJul1,2026,07_51_14PM_38c56976.webp"
+                alt="NHS Fit for the Future"
+                className="h-12 w-auto opacity-75 hover:opacity-100 transition-opacity"
+              />
             </div>
           </div>
 
