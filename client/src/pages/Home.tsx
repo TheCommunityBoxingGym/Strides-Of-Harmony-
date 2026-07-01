@@ -538,7 +538,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Do not Walk Alone, Join Us</h2>
           <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-            You do not have to face this alone. Take the next step and come walk with us. It is free, confidential, and open to everyone.
+            You do not have to face this alone. Take the next step and come walk with us. It is free and open to everyone.
           </p>
           <Button
             size="lg"
