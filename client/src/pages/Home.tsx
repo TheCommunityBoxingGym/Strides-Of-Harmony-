@@ -423,7 +423,7 @@ export default function Home() {
                 Physical activity is a proven way to boost mental wellbeing. Nordic walking combines rhythmic movement with being outdoors, which can help reduce anxiety, improve sleep, and lift your mood.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                This is not just about getting fit—it is about building the resilience you need to navigate life challenges. You will learn to focus on the present moment, one step at a time.
+                This is not just about getting fit, it is about building the resilience you need to navigate life challenges. You will learn to focus on the present moment, one step at a time.
               </p>
             </div>
 
@@ -447,7 +447,7 @@ export default function Home() {
                 Creating structure is a vital part of recovery. Our regular weekly sessions give you a consistent, positive commitment to look forward to.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                It is a gentle but powerful way to rebuild discipline and self-care into your life. By showing up for yourself each week, you are reinforcing the habits that lead to lasting change.
+                It is a gentle but powerful way to rebuild discipline and self care into your life. By showing up for yourself each week, you are reinforcing the habits that lead to lasting change.
               </p>
             </div>
 
@@ -456,7 +456,7 @@ export default function Home() {
               <img src="/manus-storage/hope-light_24ac7f0a.jpg" alt="Hope and Light" className="w-full h-48 object-cover rounded-lg mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Rediscover Your Strength – Inside and Out</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                There is a profound sense of achievement that comes from pushing your body and completing a walk. As your fitness improves, so will your self-confidence and self-worth.
+                There is a profound sense of achievement that comes from pushing your body and completing a walk. As your fitness improves, so will your self confidence and self worth.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 You will prove to yourself that you are capable of setting goals and reaching them. This renewed belief in your own abilities is a powerful tool that extends far beyond the walking track.
