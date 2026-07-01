@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail } from 'lucide-react';
+import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX } from 'lucide-react';
 
 /**
  * Strides of Harmony Landing Page
@@ -14,6 +14,8 @@ import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail } from 'l
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,6 +25,19 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (isMusicPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch(() => {
+          // Autoplay failed, user will need to click to play
+        });
+      }
+      setIsMusicPlaying(!isMusicPlaying);
+    }
+  };
 
   const benefitItems = [
     {
@@ -44,6 +59,28 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
+      {/* Background Music */}
+      <audio
+        ref={audioRef}
+        src="/manus-storage/background-music_8e97b11b.mp3"
+        loop
+        onPlay={() => setIsMusicPlaying(true)}
+        onPause={() => setIsMusicPlaying(false)}
+      />
+
+      {/* Music Control Button */}
+      <button
+        onClick={toggleMusic}
+        className="fixed bottom-8 right-8 z-40 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+        aria-label="Toggle background music"
+        title={isMusicPlaying ? 'Mute music' : 'Play music'}
+      >
+        {isMusicPlaying ? (
+          <Volume2 className="w-6 h-6" />
+        ) : (
+          <VolumeX className="w-6 h-6" />
+        )}
+      </button>
       {/* Navigation */}
       <nav
         className="fixed top-0 left-0 right-0 z-50 bg-transparent"
@@ -97,7 +134,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white animate-gold-sparkle">
             Step Into New Possibilities
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white">
+          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-white animate-typewriter">
             Join our free Nordic Walking sessions in partnership with Turning Point. A new way to move forward, at your own pace, in the fresh air.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -283,21 +320,31 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {benefitItems.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <item.icon className="w-12 h-12 text-green-500 mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-700">{item.description}</p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0s' }}>
+              <img src="/manus-storage/no-fitness-requirements_cdc41659.png" alt="No Fitness Requirements" className="w-full h-48 object-cover" />
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">No Fitness Requirements</h3>
+                <p className="text-gray-700">Start exactly where you are. No experience necessary.</p>
               </div>
-            ))}
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <img src="/manus-storage/supportive-community_945ad2d2.png" alt="Supportive Community" className="w-full h-48 object-cover" />
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Supportive Community</h3>
+                <p className="text-gray-700">Welcome just as you are. No judgement, just mutual encouragement.</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <img src="/manus-storage/actively-recovering_30269f96.png" alt="Actively Recovering" className="w-full h-48 object-cover" />
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Actively Recovering</h3>
+                <p className="text-gray-700">Specifically designed for people overcoming addiction and substance abuse.</p>
+              </div>
+            </div>
           </div>
 
           <div className="bg-green-50 border-2 border-green-200 rounded-lg p-8 animate-fade-in-up">
-            <p className="text-lg text-gray-800 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed text-center">
               <strong>This session is specifically aimed at people who are actively trying to overcome addictions and substance abuse.</strong> There are no fitness requirements, and you do not need any experience. You are welcome just as you are. Our goal is to provide a supportive environment where you can focus on your wellbeing, connect with others who understand your journey, and take positive steps forward in a safe, judgement-free space.
             </p>
           </div>
@@ -316,8 +363,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
               <img
-                src="/manus-storage/manfredrichter-hike-4919705_1920_d386d3c6.jpg"
-                alt="Nordic walking outdoors"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
+                alt="Diverse group Nordic walking together in the park"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
@@ -375,6 +422,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Mental Health & Resilience */}
             <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
+              <img src="/manus-storage/mental-health-reflection_5c00c0b8.jpg" alt="Mental Health Reflection" className="w-full h-48 object-cover rounded-lg mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Walk Your Way to a Clearer Mind</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Physical activity is a proven way to boost mental wellbeing. Nordic walking combines rhythmic movement with being outdoors, which can help reduce anxiety, improve sleep, and lift your mood.
@@ -386,6 +434,7 @@ export default function Home() {
 
             {/* Community & Connection */}
             <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
+              <img src="/manus-storage/community-support_4d495f0c.jpg" alt="Community Support" className="w-full h-48 object-cover rounded-lg mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Find Your Tribe – Walk With People Who Get It</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Addiction and recovery can feel isolating. Our sessions connect you with a supportive community of peers who are on a similar journey.
@@ -397,6 +446,7 @@ export default function Home() {
 
             {/* Routine & Structure */}
             <div className="bg-gradient-to-br from-orange-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
+              <img src="/manus-storage/healing-growth_f75f4dd9.jpg" alt="Healing and Growth" className="w-full h-48 object-cover rounded-lg mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Build a Healthy Routine That Sticks</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Creating structure is a vital part of recovery. Our regular weekly sessions give you a consistent, positive commitment to look forward to.
@@ -408,6 +458,7 @@ export default function Home() {
 
             {/* Confidence & Self-Esteem */}
             <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
+              <img src="/manus-storage/hope-light_24ac7f0a.jpg" alt="Hope and Light" className="w-full h-48 object-cover rounded-lg mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Rediscover Your Strength – Inside and Out</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 There is a profound sense of achievement that comes from pushing your body and completing a walk. As your fitness improves, so will your self-confidence and self-worth.
@@ -420,7 +471,7 @@ export default function Home() {
 
           {/* Summary */}
           <div className="bg-gradient-to-r from-blue-500 to-green-500 text-white p-8 md:p-12 rounded-lg shadow-lg animate-fade-in-up">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">The Benefits Go Far Beyond the Walk</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">The Benefits Go Far Beyond the Walk</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex gap-4">
                 <Zap className="w-6 h-6 flex-shrink-0" />
@@ -463,28 +514,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
+              <img
+                src="/manus-storage/community-celebration-victory_697a72dd.png"
+                alt="Diverse community celebrating together in Victoria Park Leicester with Nordic walking poles"
                 className="rounded-lg shadow-lg w-full h-auto"
-              >
-                <source src="/manus-storage/park-path_c00191a4.mp4" type="video/mp4" />
-              </video>
+              />
             </div>
             <div className="animate-fade-in-right">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 More Than Just a Walk
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our Nordic Walking sessions are just one part of a bigger support network. Like all Turning Point services, we encourage you to move forward at your own pace, whether that is on our group walks or through additional support.
+                Our Nordic Walking sessions are just one <strong>part of a bigger support network.</strong> Like all Turning Point services, we encourage you to move forward at your own pace, whether that is on our group walks or through additional support.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 You can also access help <strong>online, over the phone, or one-to-one</strong>—whatever suits you best.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We also recognise that mental health and substance use are deeply connected. That is why our approach is holistic, supporting your overall wellbeing and resilience every step of the way.
+                We also recognise that mental health and substance use are deeply connected. That is why our approach is holistic, <strong>supporting your overall wellbeing and resilience every step of the way.</strong>
               </p>
             </div>
           </div>

@@ -256,6 +256,26 @@
       color: #ffffff;
     }
   }
+
+  @keyframes typewriter {
+    0% {
+      width: 0;
+      visibility: visible;
+    }
+    99% {
+      visibility: visible;
+    }
+    100% {
+      width: 100%;
+      visibility: visible;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-right-color: transparent;
+    }
+  }
   
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out forwards;
@@ -284,6 +304,17 @@
   .animate-gold-sparkle {
     animation: goldSparkle 5.5s ease-in-out infinite;
   }
+
+  .animate-typewriter {
+    overflow: hidden;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    animation: typewriter 4s steps(120, end) 0s 1 normal both, blink 0.75s step-end 0s infinite;
+  }
+
+  .animate-typewriter.loop {
+    animation: typewriter 4s steps(120, end) 0s infinite normal both, blink 0.75s step-end 0s infinite;
+  }
   
   /* Stagger animations */
   .stagger-1 { animation-delay: 0.1s; }
@@ -291,6 +322,17 @@
   .stagger-3 { animation-delay: 0.3s; }
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
+
+  /* Typewriter stagger for repeated animation */
+  .typewriter-delay-1 {
+    animation-delay: 0s;
+  }
+  .typewriter-delay-2 {
+    animation-delay: 10s;
+  }
+  .typewriter-delay-3 {
+    animation-delay: 20s;
+  }
   
   /* Typography utilities */
   .font-display {
