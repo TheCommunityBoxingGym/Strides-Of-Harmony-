@@ -536,7 +536,7 @@ export default function Home() {
       {/* Call to Action Section */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-blue-600 to-green-600 text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Do not Walk Alone – Join Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Do not Walk Alone, Join Us</h2>
           <p className="text-xl md:text-2xl mb-8 leading-relaxed">
             You do not have to face this alone. Take the next step and come walk with us. It is free, confidential, and open to everyone.
           </p>
