@@ -271,7 +271,7 @@ export default function Home() {
             <div className="animate-fade-in-left">
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Full-Body, Low-Impact</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Full Body, Low Impact</h3>
                   <p className="text-gray-700">
                     Nordic Walking engages your core and legs while using poles to propel you forward, making it accessible for all fitness levels.
                   </p>
@@ -430,7 +430,7 @@ export default function Home() {
             {/* Community & Connection */}
             <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
               <img src="/manus-storage/community-support_4d495f0c.jpg" alt="Community Support" className="w-full h-48 object-cover rounded-lg mb-6" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Find Your Tribe – Walk With People Who Get It</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Find Your Tribe, Walk With People Who Get It</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 Addiction and recovery can feel isolating. Our sessions connect you with a supportive community of peers who are on a similar journey.
               </p>
@@ -454,7 +454,7 @@ export default function Home() {
             {/* Confidence & Self-Esteem */}
             <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-lg shadow-md animate-fade-in-up">
               <img src="/manus-storage/hope-light_24ac7f0a.jpg" alt="Hope and Light" className="w-full h-48 object-cover rounded-lg mb-6" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Rediscover Your Strength – Inside and Out</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Rediscover Your Strength, Inside and Out</h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
                 There is a profound sense of achievement that comes from pushing your body and completing a walk. As your fitness improves, so will your self confidence and self worth.
               </p>
