@@ -474,51 +474,113 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Solution Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      {/* The Solution Section - Transformation & New Beginning */}
+      <section className="py-20 md:py-32 bg-gray-900 relative overflow-hidden">
+        {/* Background image with overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/manus-storage/recovery_2d0371e5.png"
+            alt=""
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Discover the Power of Nordic Walking
             </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Our new outdoor "Strides Of Harmony" session is not just exercise. It's a fresh start.
+            <p className="text-xl md:text-2xl text-green-300 font-semibold max-w-3xl mx-auto">
+              This is not just exercise. This is your turning point.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Powerful opening statement */}
+          <div className="max-w-4xl mx-auto mb-16 animate-fade-in-up">
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed text-center font-light">
+              We know what it took to get here. The sleepless nights. The broken promises you made to yourself. The weight of a life that felt like it belonged to someone else. We know because we have walked that road too.
+            </p>
+          </div>
+
+          {/* Two-column: Image + Powerful Text */}
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
             <div className="animate-fade-in-left">
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Full Body, Low Impact</h3>
-                  <p className="text-gray-700">
-                    Nordic Walking engages your core and legs while using poles to propel you forward, making it accessible for all fitness levels.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Stress Reduction</h3>
-                  <p className="text-gray-700">
-                    Reduce stress, improve your physical health, and clear your mind with rhythmic outdoor movement.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">At Your Own Pace</h3>
-                  <p className="text-gray-700">
-                    Just like your recovery, our walks are taken entirely at your own pace. There is no competition, no pressure just forward movement, step by step.
-                  </p>
-                </div>
-              </div>
+              <img
+                src="/manus-storage/new_beginning_sunrise_path_35764f8a.png"
+                alt="A new path forward - walking into the light"
+                className="rounded-2xl shadow-2xl w-full h-auto"
+              />
             </div>
-            <div className="animate-fade-in-right">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="rounded-lg shadow-lg w-full h-auto"
+            <div className="animate-fade-in-right space-y-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+                Today, you get to choose<br />
+                <span className="text-green-400">a different path.</span>
+              </h3>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Not tomorrow. Not next week. Not when you feel ready—because that day may never come if you keep waiting. Right now, in this moment, you have the power to decide that the old version of you no longer gets to write your story.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Strides of Harmony exists for one reason: to give you a genuine, tangible, life-changing opportunity to step away from everything that held you back—and step into the person you were always meant to become.
+              </p>
+            </div>
+          </div>
+
+          {/* Three powerful pillars */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-white mb-3">Leave It Behind</h4>
+              <p className="text-gray-300">
+                Every step you take with us is a step away from the life that no longer serves you. The past does not own you. Your recovery is proof of that.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300" style={{ animationDelay: '0.1s' }}>
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-white mb-3">Rebuild Yourself</h4>
+              <p className="text-gray-300">
+                Your recovery deserves more than survival. It deserves thriving. Nordic Walking rebuilds your body, your confidence, and your belief that you are capable of extraordinary things.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300" style={{ animationDelay: '0.2s' }}>
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-white mb-3">Never Walk Alone</h4>
+              <p className="text-gray-300">
+                You are not alone in this. You are surrounded by people who understand your journey, who will lift you when you stumble, and who will celebrate every single victory with you.
+              </p>
+            </div>
+          </div>
+
+          {/* Urgent call-to-action */}
+          <div className="text-center animate-fade-in-up">
+            <div className="bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-teal-500/20 border border-green-400/30 rounded-2xl p-10 max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl font-bold text-white mb-4">
+                This is your moment. Do not let it pass.
+              </p>
+              <p className="text-lg text-gray-300 mb-8">
+                You have fought harder battles than this. You have survived things that would have broken most people. Now it is time to stop surviving and start living. Take this first step with us—and discover who you become when you finally let go.
+              </p>
+              <a
+                href="#signup"
+                className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-green-500/30 hover:scale-105 transition-all duration-300"
               >
-                <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/JXmiUcgLpmoIVyqv.mp4" type="video/mp4" />
-              </video>
+                Take Your First Step Now
+              </a>
+              <p className="text-green-300 mt-4 text-sm font-medium">
+                Free sessions. No commitment. Just show up.
+              </p>
             </div>
           </div>
         </div>
