@@ -827,11 +827,16 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in-left">
+            <div className="animate-fade-in-left flex flex-col items-center gap-6">
               <img
                 src="/manus-storage/community-celebration-victory_697a72dd.png"
                 alt="Diverse community celebrating together in Victoria Park Leicester with Nordic walking poles"
                 className="rounded-lg shadow-lg w-full h-auto"
+              />
+              <img
+                src="/manus-storage/community_boxing_gym_logo_transparent_c2eb2468.png"
+                alt="The Community Boxing Gym & Turning Point Logo"
+                className="w-40 h-40 object-contain drop-shadow-md"
               />
             </div>
             <div className="animate-fade-in-right">
