@@ -277,7 +277,7 @@ export default function Home() {
                 <img 
                   src="/manus-storage/INWALOGOINS2026Catherine_f747a27d.png" 
                   alt="INWA International Nordic Walking Association" 
-                  className="h-24 w-auto drop-shadow-lg"
+                  className="h-40 w-auto drop-shadow-lg"
                 />
               </div>
 
