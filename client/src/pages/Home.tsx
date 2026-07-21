@@ -592,8 +592,8 @@ export default function Home() {
                     </div>
                     <div className="order-1 md:order-2">
                       <img
-                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
-                        alt="Warm welcome from Nordic walking community"
+                        src="/manus-storage/turning_point_nordic_walking_03_two_walkers_bfed241e.png"
+                        alt="Warm welcome - two Nordic walkers in conversation"
                         className="rounded-xl shadow-md w-full h-auto object-cover"
                       />
                     </div>
@@ -609,8 +609,8 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                       <img
-                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
-                        alt="Expert instruction on Nordic walking technique"
+                        src="/manus-storage/turning_point_nordic_walking_02_small_group_89a43d53.png"
+                        alt="Expert guidance - small group Nordic walking together"
                         className="rounded-xl shadow-md w-full h-auto object-cover"
                       />
                     </div>
@@ -644,8 +644,8 @@ export default function Home() {
                     </div>
                     <div className="order-1 md:order-2">
                       <img
-                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
-                        alt="Celebrating progress in Nordic walking community"
+                        src="/manus-storage/turning_point_nordic_walking_04_group_chat_a0da720b.png"
+                        alt="Celebrate progress - group chatting and connecting"
                         className="rounded-xl shadow-md w-full h-auto object-cover"
                       />
                     </div>
