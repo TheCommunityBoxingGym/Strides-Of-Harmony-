@@ -167,7 +167,7 @@ export default function Home() {
                 This session is run by <strong>The Community Boxing Gym Leicester</strong> in proud partnership with <strong>Turning Point</strong>. For 60 years, Turning Point has been a trusted name people rely on to support them in improving their own lives.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                They understand that every person is equally important, and we bring that same compassionate, non-judgemental approach to every walk. With <strong>96% of their regulated services rated Good or Outstanding</strong>, you know you are in safe hands.
+                They understand that every person is equally important, and we bring that same compassionate, non judgemental approach to every walk. With <strong>96% of their regulated services rated Good or Outstanding</strong>, you know you are in safe hands.
               </p>
               <div className="flex gap-6 pt-8 justify-center md:justify-start items-center">
               <img
