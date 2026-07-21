@@ -574,46 +574,82 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in-left">
-              <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
-                alt="Diverse group Nordic walking together in the park"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+          {/* Vibrant Gradient Frame Layout */}
+          <div className="space-y-8">
+            {/* Frame 1: Warm Welcome - Orange to Yellow Gradient */}
+            <div className="animate-fade-in-up">
+              <div className="bg-gradient-to-br from-orange-400 via-orange-300 to-yellow-200 p-1 rounded-2xl shadow-xl">
+                <div className="bg-white rounded-2xl p-8 md:p-10">
+                  <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="order-2 md:order-1">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Warm Welcome</h3>
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        You will be greeted by a supportive community of people who have been in similar situations. No judgment, no pressure—just genuine connection from day one.
+                      </p>
+                    </div>
+                    <div className="order-1 md:order-2">
+                      <img
+                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
+                        alt="Warm welcome from Nordic walking community"
+                        className="rounded-xl shadow-md w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="animate-fade-in-right space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Warm Welcome</h3>
-                  <p className="text-gray-700">
-                    You will be greeted by a supportive community of people who have been in similar situations.
-                  </p>
+
+            {/* Frame 2: Expert Guidance - Blue to Teal Gradient */}
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <div className="bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-300 p-1 rounded-2xl shadow-xl">
+                <div className="bg-white rounded-2xl p-8 md:p-10">
+                  <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                      <img
+                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
+                        alt="Expert instruction on Nordic walking technique"
+                        className="rounded-xl shadow-md w-full h-auto object-cover"
+                      />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Expert Guidance</h3>
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        INWA-certified instructors guide you through every step of the INWA 10 Step Method™, at your own pace. Technique is refined progressively, never rushed.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
-                  <p className="text-gray-700">
-                    Trained instructors will guide you every step of the way, at your own pace.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Celebrate Progress</h3>
-                  <p className="text-gray-700">
-                    It is about progress, not perfection. Every small victory is celebrated together.
-                  </p>
+            </div>
+
+            {/* Frame 3: Celebrate Progress - Green to Emerald Gradient */}
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <div className="bg-gradient-to-br from-green-400 via-emerald-400 to-teal-500 p-1 rounded-2xl shadow-xl">
+                <div className="bg-white rounded-2xl p-8 md:p-10">
+                  <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="order-2 md:order-1">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+                        <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Celebrate Progress</h3>
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        It is about progress, not perfection. Every small victory—every step, every breath, every moment of connection—is celebrated together as a community.
+                      </p>
+                    </div>
+                    <div className="order-1 md:order-2">
+                      <img
+                        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663278944651/ibhwQUzhNeGoMgqP.png"
+                        alt="Celebrating progress in Nordic walking community"
+                        className="rounded-xl shadow-md w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
