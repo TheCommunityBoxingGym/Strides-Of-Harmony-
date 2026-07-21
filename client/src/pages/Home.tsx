@@ -507,8 +507,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
             <div className="animate-fade-in-left">
               <img
-                src="/manus-storage/new_beginning_sunrise_path_35764f8a.png"
-                alt="A new path forward - walking into the light"
+                src="/manus-storage/recovery_2d0371e5.png"
+                alt="People helping each other climb - community support in recovery"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
             </div>
