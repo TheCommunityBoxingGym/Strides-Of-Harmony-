@@ -479,11 +479,11 @@ export default function Home() {
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/recovery_2d0371e5.png"
+            src="/manus-storage/recovery2_8c891499.png"
             alt=""
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/85 via-gray-900/75 to-gray-900/90" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative z-10">
