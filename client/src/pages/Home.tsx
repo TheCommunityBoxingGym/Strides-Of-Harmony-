@@ -333,7 +333,7 @@ export default function Home() {
               <img src="/manus-storage/actively-recovering_30269f96.png" alt="Actively Recovering" className="w-full h-48 object-cover" />
               <div className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Actively Recovering</h3>
-                <p className="text-gray-700">Specifically designed for people overcoming addiction and substance abuse.</p>
+                <p className="text-gray-700">Specifically designed for people overcoming addiction and substance use.</p>
               </div>
             </div>
           </div>
