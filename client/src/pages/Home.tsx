@@ -492,7 +492,7 @@ export default function Home() {
               Discover the Power of Nordic Walking
             </h2>
             <p className="text-xl md:text-2xl text-green-300 font-semibold max-w-3xl mx-auto">
-              This is not just exercise. This is your turning point.
+              <span className="animate-jiggle">This is not just exercise. This is your turning point.</span>
             </p>
           </div>
 
@@ -528,36 +528,59 @@ export default function Home() {
 
           {/* Three powerful pillars */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            {/* Card 1 - Leave It Behind */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-left hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0s' }}>
+              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-green">
+                {/* Broken chains / wings / freedom icon */}
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7c0-1.1.9-2 2-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 9h2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 9h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2a2 2 0 012-2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 11h2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 11l1.5 5 3-8 3 8 1.5-5" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-white mb-3">Leave It Behind</h4>
-              <p className="text-gray-300">
+              <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Leave It Behind</h4>
+              <p className="text-gray-300 leading-relaxed">
                 Every step you take with us is a step away from the life that no longer serves you. The past does not own you. Your recovery is proof of that.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300" style={{ animationDelay: '0.1s' }}>
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+
+            {/* Card 2 - Rebuild Yourself */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-up hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.15s' }}>
+              <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-orange">
+                {/* Rising person / phoenix icon */}
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.5l-2.5 3.5h11L15 8.5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 10l-1 5h6l-1-5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 15l-1 4M14 15l1 4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 4l-3-2M16 4l3-2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2V1" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-white mb-3">Rebuild Yourself</h4>
-              <p className="text-gray-300">
+              <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Rebuild Yourself</h4>
+              <p className="text-gray-300 leading-relaxed">
                 Your recovery deserves more than survival. It deserves thriving. Nordic Walking rebuilds your body, your confidence, and your belief that you are capable of extraordinary things.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-fade-in-up hover:bg-white/15 transition-all duration-300" style={{ animationDelay: '0.2s' }}>
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+
+            {/* Card 3 - Never Walk Alone */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-right hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.3s' }}>
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-blue">
+                {/* Hands reaching / community icon */}
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-5.447-3.724" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 20H2v-2a4 4 0 015.447-3.724" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 12a4 4 0 100-8 4 4 0 000 8z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 20v-2a4 4 0 00-6 0v2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 9.5l5 5M14.5 9.5l-5 5" opacity="0" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 17c0-2.2 1.8-4 4-4s4 1.8 4 4" />
                 </svg>
               </div>
-              <h4 className="text-xl font-bold text-white mb-3">Never Walk Alone</h4>
-              <p className="text-gray-300">
+              <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Never Walk Alone</h4>
+              <p className="text-gray-300 leading-relaxed">
                 You are not alone in this. You are surrounded by people who understand your journey, who will lift you when you stumble, and who will celebrate every single victory with you.
               </p>
             </div>

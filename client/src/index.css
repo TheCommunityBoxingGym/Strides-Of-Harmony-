@@ -323,6 +323,72 @@
   .stagger-1 { animation-delay: 0.1s; }
   .stagger-2 { animation-delay: 0.2s; }
   .stagger-3 { animation-delay: 0.3s; }
+
+  /* Continuous jiggle/shake for emphasis text */
+  @keyframes jiggle {
+    0%   { transform: rotate(0deg) scale(1); }
+    5%   { transform: rotate(-2deg) scale(1.02); }
+    10%  { transform: rotate(2deg) scale(1.02); }
+    15%  { transform: rotate(-2deg) scale(1.02); }
+    20%  { transform: rotate(2deg) scale(1.02); }
+    25%  { transform: rotate(-1deg) scale(1.01); }
+    30%  { transform: rotate(1deg) scale(1.01); }
+    35%  { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(0deg) scale(1); }
+  }
+  .animate-jiggle {
+    animation: jiggle 3.5s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  /* Dramatic slam-in entrance for pillar cards */
+  @keyframes slamInLeft {
+    0%   { opacity: 0; transform: translateX(-120px) scale(0.85) rotate(-4deg); }
+    60%  { opacity: 1; transform: translateX(10px) scale(1.03) rotate(1deg); }
+    80%  { transform: translateX(-4px) scale(0.99) rotate(-0.5deg); }
+    100% { opacity: 1; transform: translateX(0) scale(1) rotate(0deg); }
+  }
+  @keyframes slamInUp {
+    0%   { opacity: 0; transform: translateY(100px) scale(0.85); }
+    60%  { opacity: 1; transform: translateY(-12px) scale(1.04); }
+    80%  { transform: translateY(5px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes slamInRight {
+    0%   { opacity: 0; transform: translateX(120px) scale(0.85) rotate(4deg); }
+    60%  { opacity: 1; transform: translateX(-10px) scale(1.03) rotate(-1deg); }
+    80%  { transform: translateX(4px) scale(0.99) rotate(0.5deg); }
+    100% { opacity: 1; transform: translateX(0) scale(1) rotate(0deg); }
+  }
+  .animate-slam-in-left {
+    animation: slamInLeft 0.75s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    opacity: 0;
+  }
+  .animate-slam-in-up {
+    animation: slamInUp 0.75s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    opacity: 0;
+  }
+  .animate-slam-in-right {
+    animation: slamInRight 0.75s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    opacity: 0;
+  }
+
+  /* Icon pulse glow */
+  @keyframes iconPulseGreen {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4), 0 0 0 0 rgba(74, 222, 128, 0.2); }
+    50%       { box-shadow: 0 0 0 12px rgba(74, 222, 128, 0.15), 0 0 0 24px rgba(74, 222, 128, 0.05); }
+  }
+  @keyframes iconPulseOrange {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(251, 146, 60, 0.4), 0 0 0 0 rgba(251, 146, 60, 0.2); }
+    50%       { box-shadow: 0 0 0 12px rgba(251, 146, 60, 0.15), 0 0 0 24px rgba(251, 146, 60, 0.05); }
+  }
+  @keyframes iconPulseBlue {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.4), 0 0 0 0 rgba(96, 165, 250, 0.2); }
+    50%       { box-shadow: 0 0 0 12px rgba(96, 165, 250, 0.15), 0 0 0 24px rgba(96, 165, 250, 0.05); }
+  }
+  .animate-pulse-green  { animation: iconPulseGreen  2.5s ease-in-out infinite; }
+  .animate-pulse-orange { animation: iconPulseOrange 2.5s ease-in-out infinite; animation-delay: 0.4s; }
+  .animate-pulse-blue   { animation: iconPulseBlue   2.5s ease-in-out infinite; animation-delay: 0.8s; }
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
 
