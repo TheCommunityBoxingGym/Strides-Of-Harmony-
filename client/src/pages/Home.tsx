@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX } from 'lucide-react';
+import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake } from 'lucide-react';
 
 /**
  * Strides of Harmony Landing Page
@@ -531,14 +531,8 @@ export default function Home() {
             {/* Card 1 - Leave It Behind */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-left hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-green">
-                {/* Broken chains / wings / freedom icon */}
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7c0-1.1.9-2 2-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 9h2" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 9h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2a2 2 0 012-2z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 11h2" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 11l1.5 5 3-8 3 8 1.5-5" />
-                </svg>
+                {/* Unlink = broken chains, freedom */}
+                <Unlink className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
               <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Leave It Behind</h4>
               <p className="text-gray-300 leading-relaxed">
@@ -549,16 +543,8 @@ export default function Home() {
             {/* Card 2 - Rebuild Yourself */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-up hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.15s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-orange">
-                {/* Rising person / phoenix icon */}
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v4" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.5l-2.5 3.5h11L15 8.5" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 10l-1 5h6l-1-5" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 15l-1 4M14 15l1 4" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 4l-3-2M16 4l3-2" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2V1" />
-                </svg>
+                {/* Flame = transformation, rising, burning away the old */}
+                <Flame className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
               <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Rebuild Yourself</h4>
               <p className="text-gray-300 leading-relaxed">
@@ -569,15 +555,8 @@ export default function Home() {
             {/* Card 3 - Never Walk Alone */}
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-right hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.3s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-blue">
-                {/* Hands reaching / community icon */}
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-5.447-3.724" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M7 20H2v-2a4 4 0 015.447-3.724" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 12a4 4 0 100-8 4 4 0 000 8z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 20v-2a4 4 0 00-6 0v2" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 9.5l5 5M14.5 9.5l-5 5" opacity="0" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 17c0-2.2 1.8-4 4-4s4 1.8 4 4" />
-                </svg>
+                {/* HeartHandshake = solidarity, community, never alone */}
+                <HeartHandshake className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
               <h4 className="text-2xl font-black text-white mb-3 tracking-tight">Never Walk Alone</h4>
               <p className="text-gray-300 leading-relaxed">
