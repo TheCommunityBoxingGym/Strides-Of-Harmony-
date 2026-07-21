@@ -399,36 +399,36 @@ export default function Home() {
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Stance & Posture</h4>
-                    <p className="text-sm text-gray-700">Correct body alignment and neutral spine positioning</p>
+                    <h4 className="font-bold text-gray-900">Posture</h4>
+                    <p className="text-sm text-gray-700">Establish correct body alignment and neutral spine positioning</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Pole Grip</h4>
-                    <p className="text-sm text-gray-700">Proper hand position and grip technique for optimal power transfer</p>
+                    <h4 className="font-bold text-gray-900">Lean</h4>
+                    <p className="text-sm text-gray-700">Slight forward lean from ankles to engage core and prepare for propulsion</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Pole Placement</h4>
-                    <p className="text-sm text-gray-700">Timing and positioning of pole contact with the ground</p>
+                    <h4 className="font-bold text-gray-900">Walk</h4>
+                    <p className="text-sm text-gray-700">Natural walking gait with coordinated leg movement</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Arm Swing</h4>
-                    <p className="text-sm text-gray-700">Rhythmic, coordinated arm movement for efficient propulsion</p>
+                    <h4 className="font-bold text-gray-900">Rotate</h4>
+                    <p className="text-sm text-gray-700">Rotate torso and shoulders to engage upper body in the movement</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">5</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Leg Movement</h4>
-                    <p className="text-sm text-gray-700">Natural gait with proper hip and knee engagement</p>
+                    <h4 className="font-bold text-gray-900">Drag</h4>
+                    <p className="text-sm text-gray-700">Drag poles backward along the ground in preparation for placement</p>
                   </div>
                 </div>
               </div>
@@ -436,36 +436,36 @@ export default function Home() {
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">6</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Breathing Rhythm</h4>
-                    <p className="text-sm text-gray-700">Coordinated breathing patterns for optimal oxygen uptake</p>
+                    <h4 className="font-bold text-gray-900">Place</h4>
+                    <p className="text-sm text-gray-700">Place poles firmly on the ground at the correct angle and timing</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">7</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Pace Control</h4>
-                    <p className="text-sm text-gray-700">Adjusting speed to maintain sustainable effort levels</p>
+                    <h4 className="font-bold text-gray-900">Push</h4>
+                    <p className="text-sm text-gray-700">Push poles backward to propel body forward with power</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">8</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Terrain Adaptation</h4>
-                    <p className="text-sm text-gray-700">Modifying technique for different surfaces and inclines</p>
+                    <h4 className="font-bold text-gray-900">Extend Fully</h4>
+                    <p className="text-sm text-gray-700">Extend arms fully behind body to maximise propulsion force</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">9</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Endurance Building</h4>
-                    <p className="text-sm text-gray-700">Progressive training to increase cardiovascular capacity</p>
+                    <h4 className="font-bold text-gray-900">Release Actively</h4>
+                    <p className="text-sm text-gray-700">Release poles with active finger extension to prepare for next swing</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">10</div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Recovery & Technique Refinement</h4>
-                    <p className="text-sm text-gray-700">Cool-down, feedback, and continuous improvement strategies</p>
+                    <h4 className="font-bold text-gray-900">Swing Forwards</h4>
+                    <p className="text-sm text-gray-700">Swing poles forward in rhythm with opposite leg for continuous propulsion</p>
                   </div>
                 </div>
               </div>
