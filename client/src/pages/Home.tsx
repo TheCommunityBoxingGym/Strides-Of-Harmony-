@@ -255,6 +255,195 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INWA 10 Step Method & Nordic Walking Education Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              The INWA 10 Step Method & Nordic Walking Science
+            </h2>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+              Our instructors are certified by the International Nordic Walking Association (INWA), the global governing body for Nordic Walking. We deliver training based on the internationally recognised INWA 10 Step Method™.
+            </p>
+          </div>
+
+          {/* What is Nordic Walking */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div className="animate-fade-in-left">
+              <img src="/manus-storage/NW_3999_e5d66f66.jpg" alt="Nordic Walking in Forest" className="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+            <div className="animate-fade-in-right space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">What is Nordic Walking?</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Nordic Walking is a full-body cardiovascular activity that uses specially designed poles to engage your upper body while walking. Unlike regular walking or hiking sticks, Nordic Walking poles are ergonomically engineered to propel you forward through a rhythmic, biomechanically correct technique.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  The poles are not for balance—they are active propulsion tools that activate approximately 90% of your body's muscles, making it one of the most efficient whole-body exercises available.
+                </p>
+              </div>
+              
+              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                <h4 className="font-bold text-gray-900 mb-3">Nordic Walking vs Running</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li><strong>Impact:</strong> 50% less impact on joints than running</li>
+                  <li><strong>Muscle Engagement:</strong> 90% of body muscles vs 50% in running</li>
+                  <li><strong>Accessibility:</strong> Suitable for all ages and fitness levels</li>
+                  <li><strong>Sustainability:</strong> Lower injury risk, longer-term adherence</li>
+                  <li><strong>Recovery-Friendly:</strong> Gentle on the body while building strength</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Muscle Groups Engaged */}
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 md:p-12 rounded-lg mb-20">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">90% Body Muscle Activation: Key Muscle Groups</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-bold text-gray-900 mb-4 text-lg">Upper Body (Pole Engagement)</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Deltoids (Shoulders):</strong> Primary drivers of pole propulsion</li>
+                  <li><strong>Triceps:</strong> Extend arms during pole push-off</li>
+                  <li><strong>Pectoralis Major (Chest):</strong> Stabilises upper body during movement</li>
+                  <li><strong>Latissimus Dorsi (Lats):</strong> Generates power in pulling phase</li>
+                  <li><strong>Rhomboids & Trapezius (Upper Back):</strong> Maintain posture and stability</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-900 mb-4 text-lg">Core & Lower Body (Locomotion)</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li><strong>Rectus Abdominis & Obliques (Core):</strong> Stabilise trunk during movement</li>
+                  <li><strong>Erector Spinae (Lower Back):</strong> Support spinal alignment</li>
+                  <li><strong>Quadriceps:</strong> Drive forward leg extension</li>
+                  <li><strong>Hamstrings & Glutes:</strong> Power hip extension and propulsion</li>
+                  <li><strong>Gastrocnemius & Soleus (Calves):</strong> Provide push-off force</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-gray-700 mt-6 text-center italic">
+              This coordinated engagement of upper and lower body creates a synergistic effect, improving cardiovascular fitness, muscular endurance, and metabolic efficiency simultaneously.
+            </p>
+          </div>
+
+          {/* Session Structure */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Your Strides of Harmony Session Structure</h3>
+            <div className="grid md:grid-cols-5 gap-4">
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <div className="text-3xl font-bold text-orange-500 mb-2">1</div>
+                <h4 className="font-bold text-gray-900 mb-2">Warm-Up</h4>
+                <p className="text-sm text-gray-700">Dynamic stretching and mobility work to prepare joints and muscles for Nordic Walking technique.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <div className="text-3xl font-bold text-blue-500 mb-2">2</div>
+                <h4 className="font-bold text-gray-900 mb-2">Technique Instruction</h4>
+                <p className="text-sm text-gray-700">INWA 10 Step Method™ coaching to ensure correct pole grip, arm swing, and body positioning.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500">
+                <div className="text-3xl font-bold text-green-500 mb-2">3</div>
+                <h4 className="font-bold text-gray-900 mb-2">Main Walk</h4>
+                <p className="text-sm text-gray-700">Guided outdoor Nordic Walking session at a sustainable pace, building cardiovascular fitness and endurance.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-500">
+                <div className="text-3xl font-bold text-purple-500 mb-2">4</div>
+                <h4 className="font-bold text-gray-900 mb-2">Cool-Down</h4>
+                <p className="text-sm text-gray-700">Gentle walking and static stretching to lower heart rate and improve flexibility.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                <div className="text-3xl font-bold text-red-500 mb-2">5</div>
+                <h4 className="font-bold text-gray-900 mb-2">Social Time</h4>
+                <p className="text-sm text-gray-700">Connect with the group over hot or cold drinks (seasonal) in a supportive, judgment-free environment.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* INWA 10 Step Method */}
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 md:p-12 rounded-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">The INWA 10 Step Method™</h3>
+            <p className="text-gray-700 mb-6 text-center">
+              Our instructors follow the internationally recognised INWA 10 Step Method™, a systematic approach to teaching Nordic Walking technique:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Stance & Posture</h4>
+                    <p className="text-sm text-gray-700">Correct body alignment and neutral spine positioning</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Pole Grip</h4>
+                    <p className="text-sm text-gray-700">Proper hand position and grip technique for optimal power transfer</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Pole Placement</h4>
+                    <p className="text-sm text-gray-700">Timing and positioning of pole contact with the ground</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Arm Swing</h4>
+                    <p className="text-sm text-gray-700">Rhythmic, coordinated arm movement for efficient propulsion</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">5</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Leg Movement</h4>
+                    <p className="text-sm text-gray-700">Natural gait with proper hip and knee engagement</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">6</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Breathing Rhythm</h4>
+                    <p className="text-sm text-gray-700">Coordinated breathing patterns for optimal oxygen uptake</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">7</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Pace Control</h4>
+                    <p className="text-sm text-gray-700">Adjusting speed to maintain sustainable effort levels</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">8</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Terrain Adaptation</h4>
+                    <p className="text-sm text-gray-700">Modifying technique for different surfaces and inclines</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">9</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Endurance Building</h4>
+                    <p className="text-sm text-gray-700">Progressive training to increase cardiovascular capacity</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">10</div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">Recovery & Technique Refinement</h4>
+                    <p className="text-sm text-gray-700">Cool-down, feedback, and continuous improvement strategies</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Solution Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
