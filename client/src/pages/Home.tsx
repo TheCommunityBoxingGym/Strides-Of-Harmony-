@@ -581,7 +581,7 @@ export default function Home() {
                 Take Your First Step Now
               </a>
               <p className="text-green-300 mt-4 text-sm font-medium">
-                Free sessions. No commitment. Just show up.
+                Free sessions - Every Week - You Matter
               </p>
             </div>
           </div>
