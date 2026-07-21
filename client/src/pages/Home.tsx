@@ -258,13 +258,43 @@ export default function Home() {
       {/* INWA 10 Step Method & Nordic Walking Education Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              The INWA 10 Step Method & Nordic Walking Science
-            </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Our instructors are certified by the International Nordic Walking Association (INWA), the global governing body for Nordic Walking. We deliver training based on the internationally recognised INWA 10 Step Method™.
-            </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center animate-fade-in-up">
+            The INWA 10 Step Method & Nordic Walking Science
+          </h2>
+
+          {/* INWA Credentials Banner */}
+          <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-green-500 rounded-lg p-8 md:p-12 mb-16 shadow-lg animate-fade-in-up">
+            <div className="grid md:grid-cols-3 gap-8 items-center">
+              {/* Left: Certification Text */}
+              <div className="md:col-span-1">
+                <p className="text-white text-lg md:text-xl font-bold leading-relaxed">
+                  Our instructors are <span className="text-yellow-200">certified by INWA</span>
+                </p>
+              </div>
+
+              {/* Center: INWA Logo */}
+              <div className="md:col-span-1 flex justify-center">
+                <img 
+                  src="/manus-storage/INWALOGOINS2026Catherine_f747a27d.png" 
+                  alt="INWA International Nordic Walking Association" 
+                  className="h-24 w-auto drop-shadow-lg"
+                />
+              </div>
+
+              {/* Right: Method Text */}
+              <div className="md:col-span-1 text-right">
+                <p className="text-white text-lg md:text-xl font-bold leading-relaxed">
+                  We deliver the <span className="text-yellow-200">INWA 10 Step Method™</span>
+                </p>
+              </div>
+            </div>
+            
+            {/* Subtitle */}
+            <div className="mt-6 pt-6 border-t border-white/30 text-center">
+              <p className="text-white/90 text-sm md:text-base">
+                The internationally recognised standard for Nordic Walking instruction
+              </p>
+            </div>
           </div>
 
           {/* What is Nordic Walking */}
