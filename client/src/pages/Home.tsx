@@ -929,7 +929,7 @@ export default function Home() {
               },
               {
                 q: "Is it really free?",
-                a: "Yes. Completely free. Every session, every week. There are no hidden costs, no membership fees, and no commitment required. Strides of Harmony is funded to be accessible to everyone, regardless of financial circumstances."
+                a: "Yes. Completely free. Every session, every week. There are no hidden costs, no membership fees, and no commitment required. Strides of Harmony is funded to be accessible to everyone, regardless of financial circumstances. This is thanks to Turning Point and their 60 year on going commitment to helping humanity break free from addictions and substance use disorder."
               },
               {
                 q: "What happens at a typical session?",
