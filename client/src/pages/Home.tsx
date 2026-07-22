@@ -913,7 +913,7 @@ export default function Home() {
               },
               {
                 q: "What should I wear?",
-                a: "You can come in absolutely anything you feel comfortable in. There is no dress code, no special kit required, and no judgement. Whether that is jeans and a hoodie, a tracksuit, or full walking gear — if you are comfortable, you are dressed right. The only thing we recommend is comfortable footwear with a good grip, such as trainers or walking shoes."
+                a: "You can come in absolutely anything you feel comfortable in. There is no dress code, no special kit required, and no judgement. Whether that is jeans and a hoodie, a tracksuit, or full walking gear if you are comfortable, you are dressed right. The only thing we recommend is comfortable footwear with a good grip, such as trainers or walking shoes."
               },
               {
                 q: "Do I need to buy my own poles?",
