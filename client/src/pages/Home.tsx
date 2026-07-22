@@ -239,7 +239,7 @@ export default function Home() {
             </div>
             <div className="animate-fade-in-right order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                If You are Looking to Make a Change...
+                If You Are Ready To Make A Change...
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 We know that <strong>overcoming addiction or substance use can feel like an uphill battle.</strong> There are moments when life feels out of control, or you might not know where else to turn.
@@ -306,10 +306,10 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">What is Nordic Walking?</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Nordic Walking is a full-body cardiovascular activity that uses specially designed poles to engage your upper body while walking. Unlike regular walking or hiking sticks, Nordic Walking poles are ergonomically engineered to propel you forward through a rhythmic, biomechanically correct technique.
+                  Nordic Walking is a full body cardiovascular activity that uses specially designed poles to engage your upper body while walking. Unlike regular walking or hiking sticks, Nordic Walking poles are ergonomically engineered to propel you forward through a rhythmic, biomechanically correct technique.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  The poles are not for balance—they are active propulsion tools that activate approximately 90% of your body's muscles, making it one of the most efficient whole-body exercises available.
+                  The poles are not for balance they are active propulsion tools that activate approximately 90% of your body's muscles, making it one of the most efficient whole body exercises available.
                 </p>
               </div>
               
@@ -320,7 +320,7 @@ export default function Home() {
                   <li><strong>Muscle Engagement:</strong> 90% of body muscles vs 50% in running</li>
                   <li><strong>Accessibility:</strong> Suitable for all ages and fitness levels</li>
                   <li><strong>Sustainability:</strong> Lower injury risk, longer-term adherence</li>
-                  <li><strong>Recovery-Friendly:</strong> Gentle on the body while building strength</li>
+                  <li><strong>Recovery Friendly:</strong> Gentle on the body while building strength</li>
                 </ul>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function Home() {
             <div className="grid md:grid-cols-5 gap-4">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500">
                 <div className="text-3xl font-bold text-orange-500 mb-2">1</div>
-                <h4 className="font-bold text-gray-900 mb-2">Warm-Up</h4>
+                <h4 className="font-bold text-gray-900 mb-2">Warm Up</h4>
                 <p className="text-sm text-gray-700">Dynamic stretching and mobility work to prepare joints and muscles for Nordic Walking technique.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
@@ -377,13 +377,13 @@ export default function Home() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-500">
                 <div className="text-3xl font-bold text-purple-500 mb-2">4</div>
-                <h4 className="font-bold text-gray-900 mb-2">Cool-Down</h4>
+                <h4 className="font-bold text-gray-900 mb-2">Cool Down</h4>
                 <p className="text-sm text-gray-700">Gentle walking and static stretching to lower heart rate and improve flexibility.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500">
                 <div className="text-3xl font-bold text-red-500 mb-2">5</div>
                 <h4 className="font-bold text-gray-900 mb-2">Social Time</h4>
-                <p className="text-sm text-gray-700">Connect with the group over hot or cold drinks (seasonal) in a supportive, judgment-free environment.</p>
+                <p className="text-sm text-gray-700">Connect with the group over hot or cold drinks (seasonal) in a supportive, judgment free environment.</p>
               </div>
             </div>
           </div>
@@ -518,10 +518,10 @@ export default function Home() {
                 <span className="text-green-400">a different path.</span>
               </h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Not tomorrow. Not next week. Not when you feel ready—because that day may never come if you keep waiting. Right now, in this moment, you have the power to decide that the old version of you no longer gets to write your story.
+                Not tomorrow. Not next week. Not when you feel ready because that day may never come if you keep waiting. Right now, in this moment, you have the power to decide that the old version of you no longer gets to write your story.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Strides of Harmony exists for one reason: to give you a genuine, tangible, life-changing opportunity to step away from everything that held you back—and step into the person you were always meant to become.
+                Strides of Harmony exists for one reason: To give you a genuine, tangible, life changing opportunity to step away from everything that held you back and step into the person you were always meant to become.
               </p>
             </div>
           </div>
@@ -569,10 +569,10 @@ export default function Home() {
           <div className="text-center animate-fade-in-up">
             <div className="bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-teal-500/20 border border-green-400/30 rounded-2xl p-10 max-w-3xl mx-auto">
               <p className="text-2xl md:text-3xl font-bold text-white mb-4">
-                This is your moment. Do not let it pass.
+                This is YOUR moment. Do not let it pass.
               </p>
               <p className="text-lg text-gray-300 mb-8">
-                You have fought harder battles than this. You have survived things that would have broken most people. Now it is time to stop surviving and start living. Take this first step with us—and discover who you become when you finally let go.
+                You have fought harder battles than this. You have survived things that would have broken most people. Now it is time to stop surviving and START living. Take this first step with us and discover who you become when you finally let go.
               </p>
               <a
                 href="#signup"
@@ -651,7 +651,7 @@ export default function Home() {
                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Warm Welcome</h3>
                       </div>
                       <p className="text-gray-700 text-lg leading-relaxed">
-                        You will be greeted by a supportive community of people who have been in similar situations. No judgment, no pressure—just genuine connection from day one.
+                        You will be greeted by a supportive community of people who have been in similar situations. No judgment, no pressure just genuine connection from day one.
                       </p>
                     </div>
                     <div className="order-1 md:order-2">
@@ -684,7 +684,7 @@ export default function Home() {
                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Expert Guidance</h3>
                       </div>
                       <p className="text-gray-700 text-lg leading-relaxed">
-                        INWA-certified instructors guide you through every step of the INWA 10 Step Method™, at your own pace. Technique is refined progressively, never rushed.
+                        INWA certified instructors guide you through every step of the INWA 10 Step Method™, at your own pace. Technique is refined progressively, never rushed.
                       </p>
                     </div>
                   </div>
@@ -703,7 +703,7 @@ export default function Home() {
                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Celebrate Progress</h3>
                       </div>
                       <p className="text-gray-700 text-lg leading-relaxed">
-                        It is about progress, not perfection. Every small victory—every step, every breath, every moment of connection—is celebrated together as a community.
+                        It is about progress, not perfection. Every small victory every step, every breath, every moment of connection is celebrated together as a community.
                       </p>
                     </div>
                     <div className="order-1 md:order-2">
@@ -812,7 +812,7 @@ export default function Home() {
                 <Heart className="w-6 h-6 flex-shrink-0" />
                 <div>
                   <p className="font-semibold mb-1">Growing Confidence</p>
-                  <p className="text-blue-50">Rediscover your inner strength and self-belief.</p>
+                  <p className="text-blue-50">Rediscover your inner strength and self belief.</p>
                 </div>
               </div>
             </div>
