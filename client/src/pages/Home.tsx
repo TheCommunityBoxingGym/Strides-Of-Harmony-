@@ -1013,7 +1013,7 @@ export default function Home() {
             <p className="text-gray-700 text-lg mb-3">Ready to take your first step?</p>
             <p className="text-gray-600 mb-6">Sign up to our email list to receive session details, updates, and be part of our community</p>
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105">
-              Join Our Email List
+              Sign Up for a Session
             </Button>
           </div>
         </div>
