@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake, Clock } from 'lucide-react';
+import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake, Clock, Facebook, Instagram, MessageCircle, Twitter } from 'lucide-react';
 
 /**
  * Strides of Harmony Landing Page
@@ -241,6 +241,56 @@ export default function Home() {
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Share Banner 1 */}
+      <section className="py-8 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-white">
+              <h3 className="text-xl md:text-2xl font-bold">Love what you see? Share the journey</h3>
+              <p className="text-green-50 mt-1">Help us reach more people in the recovery community</p>
+            </div>
+            <div className="flex gap-4">
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-blue-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://www.instagram.com/?url=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-pink-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on WhatsApp"
+              >
+                <MessageCircle className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on X (Twitter)"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
             </div>
           </div>
         </div>
@@ -603,6 +653,56 @@ export default function Home() {
               <p className="text-green-300 mt-4 text-sm font-medium">
                 Free sessions - Every Week - You Matter
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Share Banner 2 */}
+      <section className="py-8 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-white">
+              <h3 className="text-xl md:text-2xl font-bold">Ready to transform your life? Share this moment</h3>
+              <p className="text-blue-50 mt-1">Inspire others in your network to take their first step</p>
+            </div>
+            <div className="flex gap-4">
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-blue-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://www.instagram.com/?url=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-pink-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on WhatsApp"
+              >
+                <MessageCircle className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on X (Twitter)"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
             </div>
           </div>
         </div>
@@ -1015,6 +1115,56 @@ export default function Home() {
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105">
               Sign Up for a Session
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Share Banner 3 */}
+      <section className="py-8 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-white">
+              <h3 className="text-xl md:text-2xl font-bold">Join us on this journey</h3>
+              <p className="text-red-50 mt-1">Share Strides of Harmony with your community</p>
+            </div>
+            <div className="flex gap-4">
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-blue-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://www.instagram.com/?url=${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-pink-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on WhatsApp"
+              >
+                <MessageCircle className="w-6 h-6" />
+              </a>
+              <a
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                title="Share on X (Twitter)"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
