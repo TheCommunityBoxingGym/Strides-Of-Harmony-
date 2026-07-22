@@ -925,7 +925,7 @@ export default function Home() {
               },
               {
                 q: "Is this only for people in recovery?",
-                a: "While Strides of Harmony is specifically designed with the recovery community in mind, it is also open to anyone facing barriers to traditional fitness — whether physical, emotional, social, or financial. Everyone is welcome. The only requirement is a willingness to show up."
+                a: "While Strides of Harmony is specifically designed with the recovery community in mind, it is also open to anyone facing barriers to traditional fitness whether physical, emotional, social, or financial. Everyone is welcome. The only requirement is a willingness to show up."
               },
               {
                 q: "Is it really free?",
