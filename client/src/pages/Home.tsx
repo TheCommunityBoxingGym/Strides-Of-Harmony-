@@ -1094,7 +1094,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Time</h3>
               <p className="text-gray-900 text-lg font-semibold">2:00 PM - 3:00 PM</p>
-              <p className="text-gray-600">One hour session</p>
+              <p className="text-gray-600">A fun packed one hour session, please attend 5 minutes early.</p>
             </div>
 
             {/* Location */}
