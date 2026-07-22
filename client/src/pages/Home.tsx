@@ -1105,7 +1105,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-900 text-lg font-semibold">Victoria Park</p>
               <p className="text-gray-600">Leicester</p>
-              <p className="text-sm text-gray-500 mt-2">Meet outside De Montfort Hall car park</p>
+              <p className="text-sm text-gray-500 mt-2">Meet at Sikh soldier statue opposite De Montfort Hall car park</p>
             </div>
           </div>
 
