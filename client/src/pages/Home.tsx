@@ -118,7 +118,9 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center gap-12 ml-auto">
-            <Button className="bg-green-500 hover:bg-green-600 text-white">Sign Up</Button>
+            <a href="https://www.StridesOfHarmony.TheCommunityBoxingGym.Co.UK" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-green-500 hover:bg-green-600 text-white">Sign Up</Button>
+            </a>
             <div className="hidden md:flex items-center gap-8">
               <a href="#about" className="text-white hover:text-green-300 transition-colors">
                 About
@@ -167,6 +169,7 @@ export default function Home() {
             <Button
               size="lg"
               className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-6 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg hover:scale-105"
+              onClick={() => window.open('https://www.StridesOfHarmony.TheCommunityBoxingGym.Co.UK', '_blank', 'noopener,noreferrer')}
             >
               Join Our First Walk
             </Button>
@@ -649,7 +652,9 @@ export default function Home() {
                 You have fought harder battles than this. You have survived things that would have broken most people. Now it is time to stop surviving and START living. Take this first step with us and discover who you become when you finally let go.
               </p>
               <a
-                href="#signup"
+                href="https://www.StridesOfHarmony.TheCommunityBoxingGym.Co.UK"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-green-500/30 hover:scale-105 transition-all duration-300"
               >
                 Take Your First Step Now
@@ -991,6 +996,7 @@ export default function Home() {
           <Button
             size="lg"
             className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-10 py-7 rounded-lg font-bold transition-all duration-200 hover:shadow-xl hover:scale-105"
+            onClick={() => window.open('https://www.StridesOfHarmony.TheCommunityBoxingGym.Co.UK', '_blank', 'noopener,noreferrer')}
           >
             Sign Up for a Session
           </Button>
@@ -1121,7 +1127,10 @@ export default function Home() {
           <div className="mt-12 text-center bg-white rounded-2xl p-8 border-2 border-green-200">
             <p className="text-gray-700 text-lg mb-3">Ready to take your first step? This is your Turning Point.</p>
             <p className="text-gray-600 mb-6">Sign up to receive session details, updates, and be part of our community</p>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105">
+            <Button
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105"
+              onClick={() => window.open('https://www.StridesOfHarmony.TheCommunityBoxingGym.Co.UK', '_blank', 'noopener,noreferrer')}
+            >
               Sign Up for a Session
             </Button>
           </div>
