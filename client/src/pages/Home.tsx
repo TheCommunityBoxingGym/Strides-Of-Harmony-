@@ -1110,8 +1110,8 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center bg-white rounded-2xl p-8 border-2 border-green-200">
-            <p className="text-gray-700 text-lg mb-3">Ready to take your first step?</p>
-            <p className="text-gray-600 mb-6">Sign up to our email list to receive session details, updates, and be part of our community</p>
+            <p className="text-gray-700 text-lg mb-3">Ready to take your first step? This is your Turning Point.</p>
+            <p className="text-gray-600 mb-6">Sign up to receive session details, updates, and be part of our community</p>
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105">
               Sign Up for a Session
             </Button>
