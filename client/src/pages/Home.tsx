@@ -80,7 +80,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden" role="document">
       {/* Background Music */}
       <audio
         ref={audioRef}
@@ -104,7 +104,9 @@ export default function Home() {
         )}
       </button>
       {/* Navigation */}
+      <header role="banner">
       <nav
+        aria-label="Main navigation"
         className="fixed top-0 left-0 right-0 z-50 bg-transparent"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -131,7 +133,9 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      </header>
 
+      <main id="main-content" role="main">
       {/* Hero Section */}
       <section
         ref={heroRef}
@@ -1045,6 +1049,8 @@ export default function Home() {
                   className="w-full text-left px-8 py-6 flex items-center justify-between gap-4 group"
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                   aria-expanded={faqOpen === i}
+                  aria-controls={`faq-answer-${i}`}
+                  id={`faq-question-${i}`}
                 >
                   <span className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors duration-200">{item.q}</span>
                   <span className={`flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center transition-all duration-300 ${faqOpen === i ? 'bg-green-600 rotate-180' : 'group-hover:bg-green-200'}`}>
@@ -1052,6 +1058,9 @@ export default function Home() {
                   </span>
                 </button>
                 <div
+                  id={`faq-answer-${i}`}
+                  role="region"
+                  aria-labelledby={`faq-question-${i}`}
                   className="overflow-hidden transition-all duration-400"
                   style={{ maxHeight: faqOpen === i ? '400px' : '0px', opacity: faqOpen === i ? 1 : 0, transition: 'max-height 0.4s cubic-bezier(0.23,1,0.32,1), opacity 0.3s ease' }}
                 >
@@ -1169,8 +1178,10 @@ export default function Home() {
         </div>
       </section>
 
+      </main>
+
       {/* Footer */}
-      <footer id="contact" className="bg-gray-900 text-white py-16 md:py-20">
+      <footer id="contact" role="contentinfo" aria-label="Site footer" className="bg-gray-900 text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             {/* About */}

@@ -1,0 +1,11 @@
+# Robots.txt for Strides of Harmony
+# https://www.stridesofharmony.thecommunityboxinggym.co.uk/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.stridesofharmony.thecommunityboxinggym.co.uk/sitemap.xml
+
+# Disallow internal debug paths
+Disallow: /__manus__/
