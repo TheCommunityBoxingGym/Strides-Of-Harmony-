@@ -708,7 +708,7 @@ export default function Home() {
                     </div>
                     <div className="order-1 md:order-2">
                       <img
-                        src="/manus-storage/turning_point_nordic_walking_04_group_chat_a0da720b.png"
+                        src="/manus-storage/group_chat_nordic_walking_clean_aba79c89.png"
                         alt="Celebrate progress - group chatting and connecting"
                         className="rounded-xl shadow-md w-full h-auto object-cover"
                       />
