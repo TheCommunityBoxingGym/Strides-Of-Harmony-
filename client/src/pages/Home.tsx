@@ -242,7 +242,7 @@ export default function Home() {
                 If You are Looking to Make a Change...
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                We know that <strong>overcoming addiction or substance abuse can feel like an uphill battle.</strong> There are moments when life feels out of control, or you might not know where else to turn.
+                We know that <strong>overcoming addiction or substance use can feel like an uphill battle.</strong> There are moments when life feels out of control, or you might not know where else to turn.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Whether you are feeling a reliance on alcohol, navigating mental health challenges, or <strong>simply needing to develop new personal resources, </strong>we are here to help you find a different path forward.
