@@ -339,7 +339,7 @@ export default function Home() {
                   <li><strong>Impact:</strong> 50% less impact on joints than running</li>
                   <li><strong>Muscle Engagement:</strong> 90% of body muscles vs 50% in running</li>
                   <li><strong>Accessibility:</strong> Suitable for all ages and fitness levels</li>
-                  <li><strong>Sustainability:</strong> Lower injury risk, longer-term adherence</li>
+                  <li><strong>Sustainability:</strong> Lower injury risk, longer term adherence</li>
                   <li><strong>Recovery Friendly:</strong> Gentle on the body while building strength</li>
                 </ul>
               </div>
@@ -963,7 +963,7 @@ export default function Home() {
 
           <div className="mt-12 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 border border-green-100">
             <p className="text-gray-700 font-medium text-lg mb-2">Still have a question?</p>
-            <p className="text-gray-500">Reach out to us directly — we are always happy to help.</p>
+            <p className="text-gray-500">Reach out to us directly, we are always happy to help.</p>
           </div>
         </div>
       </section>
