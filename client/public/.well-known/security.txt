@@ -1,0 +1,5 @@
+Contact: mailto:info@thecommunityboxinggym.co.uk
+Expires: 2027-07-22T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.stridesofharmony.thecommunityboxinggym.co.uk/.well-known/security.txt
+Policy: https://www.stridesofharmony.thecommunityboxinggym.co.uk/

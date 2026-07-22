@@ -7,5 +7,8 @@ Allow: /
 # Sitemap location
 Sitemap: https://www.stridesofharmony.thecommunityboxinggym.co.uk/sitemap.xml
 
-# Disallow internal debug paths
+# Disallow internal debug and sensitive paths
 Disallow: /__manus__/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env

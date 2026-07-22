@@ -203,7 +203,26 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+/**
+ * Vite plugin to inject security headers into the dev server and build
+ */
+function vitePluginSecurityHeaders(): Plugin {
+  return {
+    name: "manus-security-headers",
+    configureServer(server: ViteDevServer) {
+      server.middlewares.use((_req, res, next) => {
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("X-Frame-Options", "SAMEORIGIN");
+        res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+        res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=(), payment=(), usb=()");
+        res.setHeader("X-XSS-Protection", "1; mode=block");
+        next();
+      });
+    },
+  };
+}
+
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy(), vitePluginSecurityHeaders()];
 
 export default defineConfig({
   plugins,
