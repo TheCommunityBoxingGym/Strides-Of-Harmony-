@@ -278,7 +278,7 @@ export default function Home() {
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%E2%80%93%20Every%20Saturday%202-3pm%20Victoria%20Park.%20No%20experience%20needed%2C%20completely%20free!%20%23NordicWalking%20%23Recovery%20%23Leicester%20%23StridesOfHarmony%20${typeof window !== 'undefined' ? window.location.href : ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
@@ -287,7 +287,7 @@ export default function Home() {
                 <MessageCircle className="w-6 h-6" />
               </a>
               <a
-                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20%E2%80%93%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F&hashtags=NordicWalking,Recovery,Leicester,StridesOfHarmony,TurningPoint,MentalHealth,FreeActivity,NordicWalkingLeicester,AddictionRecovery,CommunityWalking`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
@@ -690,7 +690,7 @@ export default function Home() {
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%E2%80%93%20Every%20Saturday%202-3pm%20Victoria%20Park.%20No%20experience%20needed%2C%20completely%20free!%20%23NordicWalking%20%23Recovery%20%23Leicester%20%23StridesOfHarmony%20${typeof window !== 'undefined' ? window.location.href : ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
@@ -699,7 +699,7 @@ export default function Home() {
                 <MessageCircle className="w-6 h-6" />
               </a>
               <a
-                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20%E2%80%93%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F&hashtags=NordicWalking,Recovery,Leicester,StridesOfHarmony,TurningPoint,MentalHealth,FreeActivity,NordicWalkingLeicester,AddictionRecovery,CommunityWalking`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
@@ -1156,7 +1156,7 @@ export default function Home() {
                 <Instagram className="w-6 h-6" />
               </a>
               <a
-                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery:%20${typeof window !== 'undefined' ? window.location.href : ''}`}
+                href={`https://wa.me/?text=Check%20out%20Strides%20of%20Harmony%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%E2%80%93%20Every%20Saturday%202-3pm%20Victoria%20Park.%20No%20experience%20needed%2C%20completely%20free!%20%23NordicWalking%20%23Recovery%20%23Leicester%20%23StridesOfHarmony%20${typeof window !== 'undefined' ? window.location.href : ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-green-600 p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
@@ -1165,7 +1165,7 @@ export default function Home() {
                 <MessageCircle className="w-6 h-6" />
               </a>
               <a
-                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20-%20Free%20Nordic%20Walking%20for%20Recovery`}
+                href={`https://twitter.com/intent/tweet?url=${typeof window !== 'undefined' ? window.location.href : ''}&text=Check%20out%20Strides%20of%20Harmony%20%E2%80%93%20Free%20Nordic%20Walking%20for%20Recovery%20in%20Leicester%20%F0%9F%9A%B6%E2%80%8D%E2%99%82%EF%B8%8F&hashtags=NordicWalking,Recovery,Leicester,StridesOfHarmony,TurningPoint,MentalHealth,FreeActivity,NordicWalkingLeicester,AddictionRecovery,CommunityWalking`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white hover:bg-gray-100 text-black p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
