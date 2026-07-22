@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake } from 'lucide-react';
+import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake, Clock } from 'lucide-react';
 
 /**
  * Strides of Harmony Landing Page
@@ -964,6 +964,57 @@ export default function Home() {
           <div className="mt-12 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 border border-green-100">
             <p className="text-gray-700 font-medium text-lg mb-2">Still have a question?</p>
             <p className="text-gray-500">Reach out to us directly, we are always happy to help.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Session Details Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-blue-50 to-green-50 border-t-4 border-green-500">
+        <div className="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Session Details</h2>
+            <p className="text-lg text-gray-600">Everything you need to know about joining us</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Date */}
+            <div className="bg-white rounded-2xl shadow-md p-8 text-center border-2 border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Date</h3>
+              <p className="text-gray-600 text-lg font-semibold">Coming Soon</p>
+              <p className="text-sm text-gray-500 mt-2">Details will be confirmed and shared via email</p>
+            </div>
+
+            {/* Time */}
+            <div className="bg-white rounded-2xl shadow-md p-8 text-center border-2 border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Time</h3>
+              <p className="text-gray-600 text-lg font-semibold">Coming Soon</p>
+              <p className="text-sm text-gray-500 mt-2">Details will be confirmed and shared via email</p>
+            </div>
+
+            {/* Location */}
+            <div className="bg-white rounded-2xl shadow-md p-8 text-center border-2 border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
+              <p className="text-gray-900 text-lg font-semibold">Victoria Park</p>
+              <p className="text-gray-600">Leicester</p>
+              <p className="text-sm text-gray-500 mt-2">Exact location will be provided via email upon registration</p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center bg-white rounded-2xl p-8 border-2 border-green-200">
+            <p className="text-gray-700 text-lg mb-3">Ready to take your first step?</p>
+            <p className="text-gray-600 mb-6">Sign up to our email list to receive session details, updates, and be part of our community</p>
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-200 hover:scale-105">
+              Join Our Email List
+            </Button>
           </div>
         </div>
       </section>
