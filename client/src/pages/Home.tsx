@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Heart, Users, Calendar, Zap, MapPin, Phone, Mail, Volume2, VolumeX, Unlink, Flame, HeartHandshake } from 'lucide-react';
 
@@ -17,8 +17,11 @@ export default function Home() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
+  const [pillarsVisible, setPillarsVisible] = useState(false);
+  const [faqOpen, setFaqOpen] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
+  const pillarsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,23 @@ export default function Home() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll-triggered animation for pillar cards
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setPillarsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    if (pillarsRef.current) observer.observe(pillarsRef.current);
+    return () => observer.disconnect();
   }, []);
 
   const toggleMusic = () => {
@@ -527,9 +547,9 @@ export default function Home() {
           </div>
 
           {/* Three powerful pillars */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div ref={pillarsRef} className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Card 1 - Leave It Behind */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-left hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0s' }}>
+            <div className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default ${pillarsVisible ? 'animate-slam-in-left' : 'opacity-0'}`} style={{ animationDelay: pillarsVisible ? '0s' : '0s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-green">
                 {/* Unlink = broken chains, freedom */}
                 <Unlink className="w-10 h-10 text-white" strokeWidth={2} />
@@ -541,7 +561,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 - Rebuild Yourself */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-up hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.15s' }}>
+            <div className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default ${pillarsVisible ? 'animate-slam-in-up' : 'opacity-0'}`} style={{ animationDelay: pillarsVisible ? '0.15s' : '0s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-orange">
                 {/* Flame = transformation, rising, burning away the old */}
                 <Flame className="w-10 h-10 text-white" strokeWidth={2} />
@@ -553,7 +573,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 - Never Walk Alone */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center animate-slam-in-right hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default" style={{ animationDelay: '0.3s' }}>
+            <div className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 hover:scale-105 transition-all duration-300 cursor-default ${pillarsVisible ? 'animate-slam-in-right' : 'opacity-0'}`} style={{ animationDelay: pillarsVisible ? '0.3s' : '0s' }}>
               <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-blue">
                 {/* HeartHandshake = solidarity, community, never alone */}
                 <HeartHandshake className="w-10 h-10 text-white" strokeWidth={2} />
@@ -873,6 +893,78 @@ export default function Home() {
           <p className="text-lg mt-6 text-blue-100">
             Start your journey toward a brighter future with The Community Boxing Gym Leicester and Turning Point.
           </p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 md:py-28 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">Got Questions?</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600">Everything you need to know before taking your first step with us.</p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "What if I have never Nordic walked before?",
+                a: "Absolutely no experience is needed. Every single person who joins Strides of Harmony starts from scratch. Our INWA certified instructors will guide you through the INWA 10 Step Method™ from the very beginning, step by step, at your own pace. You will be walking with confidence before you know it."
+              },
+              {
+                q: "What should I wear?",
+                a: "You can come in absolutely anything you feel comfortable in. There is no dress code, no special kit required, and no judgement. Whether that is jeans and a hoodie, a tracksuit, or full walking gear — if you are comfortable, you are dressed right. The only thing we recommend is comfortable footwear with a good grip, such as trainers or walking shoes."
+              },
+              {
+                q: "Do I need to buy my own poles?",
+                a: "No. We provide all the Nordic Walking poles you need for every session. You do not need to purchase anything. Just show up and we will take care of the rest."
+              },
+              {
+                q: "Are there any age restrictions?",
+                a: "Strides of Harmony is open to adults of all ages. Whether you are in your 20s or your 70s, Nordic Walking is designed to be accessible and beneficial at every stage of life. Our sessions are adapted to suit all fitness levels and abilities."
+              },
+              {
+                q: "Is this only for people in recovery?",
+                a: "While Strides of Harmony is specifically designed with the recovery community in mind, it is also open to anyone facing barriers to traditional fitness — whether physical, emotional, social, or financial. Everyone is welcome. The only requirement is a willingness to show up."
+              },
+              {
+                q: "Is it really free?",
+                a: "Yes. Completely free. Every session, every week. There are no hidden costs, no membership fees, and no commitment required. Strides of Harmony is funded to be accessible to everyone, regardless of financial circumstances."
+              },
+              {
+                q: "What happens at a typical session?",
+                a: "Each session follows a structured format: a dynamic warm up to prepare your body, technique instruction using the INWA 10 Step Method™, a main Nordic Walking session at a comfortable pace, a cool down with stretching, and social time with hot or cold drinks depending on the time of year. Sessions are supportive, relaxed, and community focused."
+              },
+              {
+                q: "What if I have a health condition or disability?",
+                a: "Please let us know before your first session and we will do everything we can to accommodate you. Nordic Walking is inherently low impact and gentle on joints, making it suitable for many health conditions. We always recommend consulting your GP if you have any concerns, but do not let uncertainty stop you from reaching out."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+                <button
+                  className="w-full text-left px-8 py-6 flex items-center justify-between gap-4 group"
+                  onClick={() => setFaqOpen(faqOpen === i ? null : i)}
+                  aria-expanded={faqOpen === i}
+                >
+                  <span className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors duration-200">{item.q}</span>
+                  <span className={`flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center transition-all duration-300 ${faqOpen === i ? 'bg-green-600 rotate-180' : 'group-hover:bg-green-200'}`}>
+                    <ChevronDown className={`w-5 h-5 transition-colors duration-200 ${faqOpen === i ? 'text-white' : 'text-green-700'}`} />
+                  </span>
+                </button>
+                <div
+                  className="overflow-hidden transition-all duration-400"
+                  style={{ maxHeight: faqOpen === i ? '400px' : '0px', opacity: faqOpen === i ? 1 : 0, transition: 'max-height 0.4s cubic-bezier(0.23,1,0.32,1), opacity 0.3s ease' }}
+                >
+                  <p className="px-8 pb-7 text-gray-600 leading-relaxed text-base">{item.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 border border-green-100">
+            <p className="text-gray-700 font-medium text-lg mb-2">Still have a question?</p>
+            <p className="text-gray-500">Reach out to us directly — we are always happy to help.</p>
+          </div>
         </div>
       </section>
 
