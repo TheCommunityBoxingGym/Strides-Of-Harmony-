@@ -1083,8 +1083,8 @@ export default function Home() {
                 <Calendar className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Date</h3>
-              <p className="text-gray-600 text-lg font-semibold">Coming Soon</p>
-              <p className="text-sm text-gray-500 mt-2">Details will be confirmed and shared via email</p>
+              <p className="text-gray-900 text-lg font-semibold">Every Saturday</p>
+              <p className="text-gray-600">Ongoing weekly sessions</p>
             </div>
 
             {/* Time */}
@@ -1093,8 +1093,8 @@ export default function Home() {
                 <Clock className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Time</h3>
-              <p className="text-gray-600 text-lg font-semibold">Coming Soon</p>
-              <p className="text-sm text-gray-500 mt-2">Details will be confirmed and shared via email</p>
+              <p className="text-gray-900 text-lg font-semibold">2:00 PM - 3:00 PM</p>
+              <p className="text-gray-600">One hour session</p>
             </div>
 
             {/* Location */}
@@ -1105,7 +1105,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
               <p className="text-gray-900 text-lg font-semibold">Victoria Park</p>
               <p className="text-gray-600">Leicester</p>
-              <p className="text-sm text-gray-500 mt-2">Exact location will be provided via email upon registration</p>
+              <p className="text-sm text-gray-500 mt-2">Meet outside De Montfort Hall car park</p>
             </div>
           </div>
 
